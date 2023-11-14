@@ -6,9 +6,6 @@ export const useList = defineStore('list', () => {
     return{
 
     }
-  },
-  getters: {
-
   }
 
 })
