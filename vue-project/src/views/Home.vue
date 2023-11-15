@@ -1,8 +1,6 @@
 <template> 
     <section>
-        <h1>Home Page Hello !</h1>
-        <h2> {{ message }}</h2>
-        <h2> {{ list }}</h2>
+        <h1 class="text-3xl font-bold underline" >Login</h1>
     </section>
 </template>
 
