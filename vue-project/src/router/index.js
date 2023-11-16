@@ -3,6 +3,7 @@ import Home from '../views/Home.vue'
 import products from '../views/Products.vue'
 import admin from '../views/admin.vue'
 import login from '../views/login.vue'
+// import { createStore } from 'vuex';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -18,11 +19,6 @@ const router = createRouter({
       component: products
     },
     {
-      path: '/login',
-      name: 'login',
-      component: login
-    },
-    {
       path: '/admin',
       name: 'admin',
       component: admin
@@ -34,7 +30,18 @@ const router = createRouter({
     },
 
 
-  ]
+  ],
+  state: {
+    token: null,
+  },
+  mutations: {
+    setToken(state, token) {
+      state.token = token;
+    },
+  },
+  getters: {
+    getToken: (state) => state.token,
+  },
 })
 
 export default router
