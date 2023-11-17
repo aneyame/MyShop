@@ -44,7 +44,7 @@
 
 <style>
 body{
-    display :flex; 
+    display :block; 
 }
 .checked {
   color: #0072F5;

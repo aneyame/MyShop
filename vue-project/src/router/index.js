@@ -4,6 +4,7 @@ import products from '../views/Products.vue'
 import admin from '../views/admin.vue'
 import login from '../views/login.vue'
 import register from '../views/register.vue'
+import test from '../views/test.vue'
 
 
 const router = createRouter({
@@ -34,6 +35,11 @@ const router = createRouter({
       path: '/register',
       name: 'register',
       component: register
+    },
+    {
+      path: '/test',
+      name: 'test',
+      component: test
     },
 
 

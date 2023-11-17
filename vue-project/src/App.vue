@@ -3,83 +3,100 @@ import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template> 
-  <div id="app">
-    <div class="top-nav">
-      <router-link to="/">Home</router-link>
-      <router-link to="/products">Products</router-link>
-        <div class="search">
-           <input type="text" placeholder="Search..">
-           <button type="submit" @click="search"><i class="fa fa-search"></i></button>
-        </div>
-      <router-link to="/admin">Admin</router-link>
-      <router-link to="/login">Login</router-link>
-    </div>
-    
+  <div>
+    <nav class="navbar">
+      <div class="navbar-left">
+        <router-link  class="page-name" to="/">{{ pageName }}</router-link>
+      </div>
+      <div class="navbar-middle">
+        <input v-model="searchQuery" type="text" placeholder="Search..." class="search-bar" />
+        <button @click="search" class="search-button">
+          🔍 <!-- Generic search icon -->
+        </button>
+      </div>
+      <div class="navbar-right">
+        <router-link  class="search-button" to="/login">Login</router-link>
+      </div>
+    </nav>
     <router-view></router-view>
   </div>
-
-
+  
 </template>
 
 
 <script>
 export default {
-  name: 'App',
-  methods: {
-    search() {
-      // Handle the search logic here
-      console.log('Search button clicked');
-    },
+  data() {
+    return {
+      pageName: "My Shop",
+      searchQuery: ""
+    };
   },
+  methods: {
+    login() {
+      // Implement your login functionality here
+      console.log("Login clicked");
+    },
+    search() {
+      // Implement your search functionality here
+      console.log("Search clicked");
+    }
+  }
 };
 </script> 
 
-<style>
 
-.top-nav {
+<style scoped>
+.navbar {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  background-color: #333;
+  padding: 10px;
   position: fixed;
   top: 0;
-  left: 0;
   width: 100%;
-  background-color: #f8f9fa; 
-  padding: 10px;
 }
 
-.search {
+.navbar-middle {
+  flex-grow: 1;
   display: flex;
   align-items: center;
+  margin: 10px 50px;
 }
 
-.search input {
-  padding: 8px;
-  width: 100%;
-  margin-right: 2px; /* Add some space between the input and the button */
-}
-
-.search button {
-  padding: 8px;
-  background: #ddd; /* Add your preferred button styles */
+.page-name {
   color: #fff;
+}
+
+.search-bar {
+  width: 100%; /* Adjust the width as needed */
+  padding: 5px;
+}
+
+.search-button {
+  margin-left: 5px;
+  padding: 5px;
+  background-color: #fff;
+  color: #333;
   border: none;
   cursor: pointer;
 }
-.top-nav .search button:hover {
-  background: #ccc;
+
+button i {
+  margin-right: 5px; /* Add some spacing between the icon and the text */
 }
 
-@media screen and (max-width: 600px) {
-  .top-nav {
-    flex-direction: column;
-    text-align: center;
-    align-items: left;
-  }
-
-  .search {
-    margin: 10px 0;
-  }
+button {
+  padding: 8px;
+  background-color: #fff;
+  color: #333;
+  border: none;
+  cursor: pointer;
 }
 
+.content {
+  margin-top: 70px; /* Adjust this value based on your navbar height */
+  padding: 20px;
+}
 </style>
