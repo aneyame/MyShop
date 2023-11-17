@@ -1,35 +1,40 @@
-<template> 
-    <section>
-        <h1 class="text-3xl font-bold underline" >Login</h1>
-    </section>
-</template>
-
-<script>
-// import {mapActions, mapState} from "pinia";
-// import {useList} from "../stores/counter";
-
-export default {
+<template>
+    <header>
+      <h1>{{ title }}</h1>
+      <nav>
+        <router-link to="/">Accueil</router-link> |
+        <router-link to="/about">À propos</router-link> |
+        <router-link to="/contact">Contact</router-link>
+      </nav>
+    </header>
+  </template>
+  
+  <script>
+  export default {
     data() {
-        return {
-            message: "Hello World!",
-            list: [],
-        };
-    },
-    // mounted(){
-    //     this.fetchList;
-    // },
-    // computed: {
-    //     ...mapActions(useList,["fetchList"]),
-    //     ...mapState(useList, ["getList"])
-    // },
-    // methods: {
-        
-    // },
-};
-</script>
-
-<style>
-body{
-    display :flex; 
-}
-</style>
+      return {
+        title: "Votre Site Web"
+      };
+    }
+  };
+  </script>
+  
+  <style scoped>
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 1em;
+      text-align: center;
+    }
+  
+    nav {
+      margin-top: 10px;
+    }
+  
+    nav a {
+      color: #fff;
+      margin-right: 10px;
+      text-decoration: none;
+    }
+  </style>
+  
