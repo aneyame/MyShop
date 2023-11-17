@@ -1,4 +1,5 @@
 <template>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <div class="flex justify-center">
         <div class="mx-auto flex w-full max-w-sm flex-col gap-6">
             <div class="flex flex-col items-center">
