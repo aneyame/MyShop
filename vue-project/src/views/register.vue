@@ -45,7 +45,7 @@
         
                 <div class="form-field">
                     <div class="form-control justify-center">
-                        <h2 class="registerlink">You have already an account?</h2><li><router-link class="register" to="/login">Sign In</router-link></li>
+                        <h2 class="registerlink">You have already an account?</h2><router-link class="register" to="/login">Sign In</router-link>
                     </div>
                 </div>
             </div>

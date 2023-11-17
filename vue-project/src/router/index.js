@@ -3,6 +3,7 @@ import Home from '../views/Home.vue'
 import products from '../views/Products.vue'
 import admin from '../views/admin.vue'
 import login from '../views/login.vue'
+import register from '../views/register.vue'
 
 
 const router = createRouter({
@@ -28,6 +29,13 @@ const router = createRouter({
       name: 'login',
       component: login
     },
+
+    {
+      path: '/register',
+      name: 'register',
+      component: register
+    },
+
 
 
   ],

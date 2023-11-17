@@ -1,4 +1,5 @@
 <template>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <div id="login" class="flex justify-center">
     <div class="w-full max-w-sm">
       <div class="mx-auto text-center">
@@ -37,8 +38,8 @@
         </div>
         <div class="form-field">
           <div class="form-control justify-center">
-            <a class="link link-underline-hover link-primary text-sm">Don't have an account yet? Sign up.</a>
-          </div>
+            <router-link  class="link link-underline-hover link-primary text-sm" to="/register">Don't have an account yet? Register.</router-link>
+        </div>
         </div>
       </div>
     </div>
