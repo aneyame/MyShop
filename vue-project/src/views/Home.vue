@@ -1,122 +1,5 @@
 <template>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- <div class="w-[1512px] h-[982px] px-[109px] pt-[274px] pb-40 bg-neutral-900 justify-center items-center inline-flex">
-        <div class="flex-wrap justify-start items-start gap-[70px] inline-flex">
-            <div class="justify-start items-start gap-[50px] inline-flex">
-                <div class="w-[286px] h-[239px] p-2.5 bg-neutral-900 rounded-[10px] border border-neutral-400 flex-col justify-start items-start gap-5 inline-flex">
-                    <div>
-                        <label for="fruit">Category:</label>
-                        <select v-model="selectedFruit" id="fruit">
-                            <option value="" disabled selected>Category</option>
-                            <option v-for="fruit in fruits" :key="fruit.value" :value="fruit.value">{{ fruit.label }}</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="w-[286px] h-[239px] p-2.5 bg-neutral-900 rounded-[10px] border border-neutral-400 flex-col justify-start items-start gap-5 inline-flex">
-                    <div class="self-stretch h-[125px] bg-zinc-300 rounded-[10px]"></div>
-                    <div class="w-[266px] justify-start items-start gap-[66px] inline-flex">
-                        <div class="w-[155px] flex-col justify-start items-start gap-[5px] inline-flex">
-                            <router-link class="self-stretch text-white text-xl font-semibold font-['Arial']" to="/login">Product name</router-link>
-                            <div class="self-stretch text-zinc-400 text-base font-normal font-['Arial']">Category</div>
-                            <article>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
-                            </article>
-                        </div>
-                        <div class="grow shrink basis-0 text-right text-emerald-500 text-xl font-normal font-['Arial']">99€</div>
-                    </div>
-                </div>
-                <div class="w-[286px] h-[239px] p-2.5 bg-neutral-900 rounded-[10px] border border-neutral-400 flex-col justify-start items-start gap-5 inline-flex">
-                    <div class="self-stretch h-[125px] bg-zinc-300 rounded-[10px]"></div>
-                    <div class="w-[266px] justify-start items-start gap-[66px] inline-flex">
-                        <div class="w-[155px] flex-col justify-start items-start gap-[5px] inline-flex">
-                            <router-link class="self-stretch text-white text-xl font-semibold font-['Arial']" to="/login">Product name</router-link>
-                            <div class="self-stretch text-zinc-400 text-base font-normal font-['Arial']">Category</div>
-                            <article>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
-                            </article>
-                        </div>
-                        <div class="grow shrink basis-0 text-right text-emerald-500 text-xl font-normal font-['Arial']">99€</div>
-                    </div>
-                </div>
-                <div class="w-[286px] h-[239px] p-2.5 bg-neutral-900 rounded-[10px] border border-neutral-400 flex-col justify-start items-start gap-5 inline-flex">
-                    <div class="self-stretch h-[125px] bg-zinc-300 rounded-[10px]"></div>
-                    <div class="w-[266px] justify-start items-start gap-[66px] inline-flex">
-                        <div class="w-[155px] flex-col justify-start items-start gap-[5px] inline-flex">
-                            <router-link class="self-stretch text-white text-xl font-semibold font-['Arial']" to="/login">Product name</router-link>
-                            <div class="self-stretch text-zinc-400 text-base font-normal font-['Arial']">Category</div>
-                            <article>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
-                            </article>
-                        </div>
-                        <div class="grow shrink basis-0 text-right text-emerald-500 text-xl font-normal font-['Arial']">99€</div>
-                    </div>
-                </div>
-                <div class="w-[286px] h-[239px] p-2.5 bg-neutral-900 rounded-[10px] border border-neutral-400 flex-col justify-start items-start gap-5 inline-flex">
-                    <div class="self-stretch h-[125px] bg-zinc-300 rounded-[10px]"></div>
-                    <div class="w-[266px] justify-start items-start gap-[66px] inline-flex">
-                        <div class="w-[155px] flex-col justify-start items-start gap-[5px] inline-flex">
-                            <router-link class="self-stretch text-white text-xl font-semibold font-['Arial']" to="/login">Product name</router-link>
-                            <div class="self-stretch text-zinc-400 text-base font-normal font-['Arial']">Category</div>
-                            <article>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
-                            </article>
-                        </div>
-                        <div class="grow shrink basis-0 text-right text-emerald-500 text-xl font-normal font-['Arial']">99€</div>
-                    </div>
-                </div>
-                <div class="w-[286px] h-[239px] p-2.5 bg-neutral-900 rounded-[10px] border border-neutral-400 flex-col justify-start items-start gap-5 inline-flex">
-                    <div class="self-stretch h-[125px] bg-zinc-300 rounded-[10px]"></div>
-                    <div class="w-[266px] justify-start items-start gap-[66px] inline-flex">
-                        <div class="w-[155px] flex-col justify-start items-start gap-[5px] inline-flex">
-                            <router-link class="self-stretch text-white text-xl font-semibold font-['Arial']" to="/login">Product name</router-link>
-                            <div class="self-stretch text-zinc-400 text-base font-normal font-['Arial']">Category</div>
-                            <article>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
-                            </article>
-                        </div>
-                        <div class="grow shrink basis-0 text-right text-emerald-500 text-xl font-normal font-['Arial']">99€</div>
-                    </div>
-                </div>
-                <div class="w-[286px] h-[239px] p-2.5 bg-neutral-900 rounded-[10px] border border-neutral-400 flex-col justify-start items-start gap-5 inline-flex">
-                    <div class="self-stretch h-[125px] bg-zinc-300 rounded-[10px]"></div>
-                    <div class="w-[266px] justify-start items-start gap-[66px] inline-flex">
-                        <div class="w-[155px] flex-col justify-start items-start gap-[5px] inline-flex">
-                            <router-link class="self-stretch text-white text-xl font-semibold font-['Arial']" to="/login">Product name</router-link>
-                            <div class="self-stretch text-zinc-400 text-base font-normal font-['Arial']">Category</div>
-                            <article>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
-                            </article>
-                        </div>
-                        <div class="grow shrink basis-0 text-right text-emerald-500 text-xl font-normal font-['Arial']">99€</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
     
     <div class="flex items-start content-start gap-14 flex-wrap  justify-center pt-[100px]">
         <div class="w-[286px] h-[239px] p-2.5 bg-neutral-900 rounded-[10px] border border-neutral-400 flex-col justify-start items-start gap-5 inline-flex">
@@ -160,7 +43,7 @@
             <div class="self-stretch h-[125px] bg-zinc-300 rounded-[10px]"></div>
             <div class="w-[266px] justify-start items-start gap-[66px] inline-flex">
                 <div class="w-[155px] flex-col justify-start items-start gap-[5px] inline-flex">
-                    <router-link class="self-stretch text-white text-xl font-semibold font-['Arial']" to="/login">Product name</router-link>
+                    <router-link class="self-stretch text-white text-xl font-semibold font-['Arial']" to="/products">Product name</router-link>
                     <div class="self-stretch text-zinc-400 text-base font-normal font-['Arial']">Category</div>
                     <article>
                         <span class="fa fa-star checked"></span>
@@ -177,7 +60,7 @@
             <div class="self-stretch h-[125px] bg-zinc-300 rounded-[10px]"></div>
             <div class="w-[266px] justify-start items-start gap-[66px] inline-flex">
                 <div class="w-[155px] flex-col justify-start items-start gap-[5px] inline-flex">
-                    <router-link class="self-stretch text-white text-xl font-semibold font-['Arial']" to="/login">Product name</router-link>
+                    <router-link class="self-stretch text-white text-xl font-semibold font-['Arial']" to="/products">Product name</router-link>
                     <div class="self-stretch text-zinc-400 text-base font-normal font-['Arial']">Category</div>
                     <article>
                         <span class="fa fa-star checked"></span>
@@ -194,7 +77,7 @@
             <div class="self-stretch h-[125px] bg-zinc-300 rounded-[10px]"></div>
             <div class="w-[266px] justify-start items-start gap-[66px] inline-flex">
                 <div class="w-[155px] flex-col justify-start items-start gap-[5px] inline-flex">
-                    <router-link class="self-stretch text-white text-xl font-semibold font-['Arial']" to="/login">Product name</router-link>
+                    <router-link class="self-stretch text-white text-xl font-semibold font-['Arial']" to="/products">Product name</router-link>
                     <div class="self-stretch text-zinc-400 text-base font-normal font-['Arial']">Category</div>
                     <article>
                         <span class="fa fa-star checked"></span>
@@ -211,7 +94,7 @@
             <div class="self-stretch h-[125px] bg-zinc-300 rounded-[10px]"></div>
             <div class="w-[266px] justify-start items-start gap-[66px] inline-flex">
                 <div class="w-[155px] flex-col justify-start items-start gap-[5px] inline-flex">
-                    <router-link class="self-stretch text-white text-xl font-semibold font-['Arial']" to="/login">Product name</router-link>
+                    <router-link class="self-stretch text-white text-xl font-semibold font-['Arial']" to="/products">Product name</router-link>
                     <div class="self-stretch text-zinc-400 text-base font-normal font-['Arial']">Category</div>
                     <article>
                         <span class="fa fa-star checked"></span>
@@ -228,7 +111,7 @@
             <div class="self-stretch h-[125px] bg-zinc-300 rounded-[10px]"></div>
             <div class="w-[266px] justify-start items-start gap-[66px] inline-flex">
                 <div class="w-[155px] flex-col justify-start items-start gap-[5px] inline-flex">
-                    <router-link class="self-stretch text-white text-xl font-semibold font-['Arial']" to="/login">Product name</router-link>
+                    <router-link class="self-stretch text-white text-xl font-semibold font-['Arial']" to="/products">Product name</router-link>
                     <div class="self-stretch text-zinc-400 text-base font-normal font-['Arial']">Category</div>
                     <article>
                         <span class="fa fa-star checked"></span>
@@ -245,7 +128,7 @@
             <div class="self-stretch h-[125px] bg-zinc-300 rounded-[10px]"></div>
             <div class="w-[266px] justify-start items-start gap-[66px] inline-flex">
                 <div class="w-[155px] flex-col justify-start items-start gap-[5px] inline-flex">
-                    <router-link class="self-stretch text-white text-xl font-semibold font-['Arial']" to="/login">Product name</router-link>
+                    <router-link class="self-stretch text-white text-xl font-semibold font-['Arial']" to="/products">Product name</router-link>
                     <div class="self-stretch text-zinc-400 text-base font-normal font-['Arial']">Category</div>
                     <article>
                         <span class="fa fa-star checked"></span>
@@ -262,7 +145,7 @@
             <div class="self-stretch h-[125px] bg-zinc-300 rounded-[10px]"></div>
             <div class="w-[266px] justify-start items-start gap-[66px] inline-flex">
                 <div class="w-[155px] flex-col justify-start items-start gap-[5px] inline-flex">
-                    <router-link class="self-stretch text-white text-xl font-semibold font-['Arial']" to="/login">Product name</router-link>
+                    <router-link class="self-stretch text-white text-xl font-semibold font-['Arial']" to="/products">Product name</router-link>
                     <div class="self-stretch text-zinc-400 text-base font-normal font-['Arial']">Category</div>
                     <article>
                         <span class="fa fa-star checked"></span>
