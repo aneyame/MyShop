@@ -2,7 +2,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <div>
       <!-- Barre de navigation -->
-      <nav class="flex justify-center p-4 bg-gray-800">
+      <nav class="flex justify-center p-4 bg-gray-800 pt-[100px]" >
         <button @click="afficherProduits" class="text-white mx-2 focus:outline-none">Products</button><br />
         <button @click="afficherCategories" class="text-white mx-2 focus:outline-none">Categories</button><br />
         <button @click="afficherUtilisateurs" class="text-white mx-2 focus:outline-none">Users</button><br />
@@ -127,7 +127,7 @@
     this.pageActuelle = 'categories';
 
     // Ajoutez votre token d'authentification ici
-    const token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE3MDAyNTU1MDgsImV4cCI6MTcwMDI1OTEwOCwicm9sZXMiOlsiUk9MRV9BRE1JTiIsIlJPTEVfVVNFUiJdLCJ1c2VybmFtZSI6InN0ZXZlbi5ndWlsbGVybWV0QGVwaXRlY2guZGlnaXRhbCJ9.Fg-k4LE6Xq8yAnSFqiEWzwqnW007WiWRQpbJdNDl7QdtYBZApYjrrZvf6YBRnLlPhxICD2yXa_DGqYbn0QWAy14sBWf710xkub2AJSDrtO_o_uY5ayBTcoGJrnnUuPfjKUtENwns9txJDi3qe5l5a50Hg1oivQt1D3Xqu7nP_PdZ7rmUSEzyrdkYtYIwoc2x2e9fhDYokf70l8B8tuU8Rrd_eukf483wJcI4mA_IushzLSF2yztqaA3ObLTlnUsK0M8JpY_psm-jBdkVVVByvjPFDL3NATZDDIeO4kOaojezzQux9hsKo55YfxNEdRJsqflZfBVjrl9pn11Ean95sg';
+    const token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE3MDAyNTcwMDEsImV4cCI6MTcwMDI2MDYwMSwicm9sZXMiOlsiUk9MRV9BRE1JTiIsIlJPTEVfVVNFUiJdLCJ1c2VybmFtZSI6InN0ZXZlbi5ndWlsbGVybWV0QGVwaXRlY2guZGlnaXRhbCJ9.CccpmkzR-48c-zmAisFDOVjmdm6l28WDAuS6nlpE3vQb-nGohNv6LI9-jd9tYLB5P_DKwAqN6TQIgsSVd10x6CqbfDuRzJc7kUWFrBWD_V9p3U8lxfDUyvelTxOivvOGaXqewbDXQvaistqsLQaQKs8AQ0dKyZUlpHgGCICWLvkAICN1tNJTCB_MKYcTxZDIwPn5IW369KIlsuaj7Ab05vCPlexkptgi_SZ7-x-opkdUqQu7Ch0w1a4KFZK7ZjiR-GvB56g1vxQIyH1pQu0Sx36eEsXWr3_39cRO_rq3o8lPT3ykdBM79S30u0e0GiNdsWyR2Ls9WEx6JZvfbQbeIA';
 
     // Options de la requête
     const options = {
@@ -164,7 +164,7 @@
     this.pageActuelle = 'users';
 
     // Ajoutez votre token d'authentification ici
-    const token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE3MDAyNTU1MDgsImV4cCI6MTcwMDI1OTEwOCwicm9sZXMiOlsiUk9MRV9BRE1JTiIsIlJPTEVfVVNFUiJdLCJ1c2VybmFtZSI6InN0ZXZlbi5ndWlsbGVybWV0QGVwaXRlY2guZGlnaXRhbCJ9.Fg-k4LE6Xq8yAnSFqiEWzwqnW007WiWRQpbJdNDl7QdtYBZApYjrrZvf6YBRnLlPhxICD2yXa_DGqYbn0QWAy14sBWf710xkub2AJSDrtO_o_uY5ayBTcoGJrnnUuPfjKUtENwns9txJDi3qe5l5a50Hg1oivQt1D3Xqu7nP_PdZ7rmUSEzyrdkYtYIwoc2x2e9fhDYokf70l8B8tuU8Rrd_eukf483wJcI4mA_IushzLSF2yztqaA3ObLTlnUsK0M8JpY_psm-jBdkVVVByvjPFDL3NATZDDIeO4kOaojezzQux9hsKo55YfxNEdRJsqflZfBVjrl9pn11Ean95sg';
+    const token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE3MDAyNTcwMDEsImV4cCI6MTcwMDI2MDYwMSwicm9sZXMiOlsiUk9MRV9BRE1JTiIsIlJPTEVfVVNFUiJdLCJ1c2VybmFtZSI6InN0ZXZlbi5ndWlsbGVybWV0QGVwaXRlY2guZGlnaXRhbCJ9.CccpmkzR-48c-zmAisFDOVjmdm6l28WDAuS6nlpE3vQb-nGohNv6LI9-jd9tYLB5P_DKwAqN6TQIgsSVd10x6CqbfDuRzJc7kUWFrBWD_V9p3U8lxfDUyvelTxOivvOGaXqewbDXQvaistqsLQaQKs8AQ0dKyZUlpHgGCICWLvkAICN1tNJTCB_MKYcTxZDIwPn5IW369KIlsuaj7Ab05vCPlexkptgi_SZ7-x-opkdUqQu7Ch0w1a4KFZK7ZjiR-GvB56g1vxQIyH1pQu0Sx36eEsXWr3_39cRO_rq3o8lPT3ykdBM79S30u0e0GiNdsWyR2Ls9WEx6JZvfbQbeIA';
 
     // Options de la requête
     const options = {
@@ -211,7 +211,7 @@
         if (confirm('Êtes-vous sûr de vouloir supprimer ce produit ?')) {
           try {
             const config = {
-            headers: { Authorization: `Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE3MDAyNDIzNTUsImV4cCI6MTcwMDI0NTk1NSwicm9sZXMiOlsiUk9MRV9BRE1JTiIsIlJPTEVfVVNFUiJdLCJ1c2VybmFtZSI6InN0ZXZlbi5ndWlsbGVybWV0QGVwaXRlY2guZGlnaXRhbCJ9.hcIVvIgwmZOLcceZlBAIt0TkDvYG18Q74VB78n2D9p1ZymbTp2ayrvKNpg_192jmYFUD3MJXFKtlpBe39c8PqvuozK2rSEzrsjxJMXvYTReYNI6KwjGD_WJijN8Xr1nvFQytlpeu5MYdqZu40sEuNOO6oosvHvaHwxGnO11BjKwwN_mukhjO46ZMVrEkc2cmzJhWjF40G7NnqlnffDc0VsQcfUjl0qGkoZKvfF1OfsPjfT6CMsO9r8_ESVX8jy-0VOEdsws5Ofuz0VrEtNftm2ymw1qMF02W9q6LHf3yi_JxAvjNCRGk1A64IUR6UwIrIfkjuWz_V2smrm8mkMw4eg` }
+            headers: { Authorization: `Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE3MDAyNTcwMDEsImV4cCI6MTcwMDI2MDYwMSwicm9sZXMiOlsiUk9MRV9BRE1JTiIsIlJPTEVfVVNFUiJdLCJ1c2VybmFtZSI6InN0ZXZlbi5ndWlsbGVybWV0QGVwaXRlY2guZGlnaXRhbCJ9.CccpmkzR-48c-zmAisFDOVjmdm6l28WDAuS6nlpE3vQb-nGohNv6LI9-jd9tYLB5P_DKwAqN6TQIgsSVd10x6CqbfDuRzJc7kUWFrBWD_V9p3U8lxfDUyvelTxOivvOGaXqewbDXQvaistqsLQaQKs8AQ0dKyZUlpHgGCICWLvkAICN1tNJTCB_MKYcTxZDIwPn5IW369KIlsuaj7Ab05vCPlexkptgi_SZ7-x-opkdUqQu7Ch0w1a4KFZK7ZjiR-GvB56g1vxQIyH1pQu0Sx36eEsXWr3_39cRO_rq3o8lPT3ykdBM79S30u0e0GiNdsWyR2Ls9WEx6JZvfbQbeIA` }
             };
             // Faites une requête DELETE pour supprimer le produit de votre API
             await axios.delete(`http://localhost/api/products/${produitId}`, config); // Remplacez par l'URL réelle de votre API
@@ -237,7 +237,7 @@
  
     async validerEditionCategorie() {
       try {
-        const authToken = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE3MDAyNDc4MDAsImV4cCI6MTcwMDI1MTQwMCwicm9sZXMiOlsiUk9MRV9BRE1JTiIsIlJPTEVfVVNFUiJdLCJ1c2VybmFtZSI6ImF6ZXJ0eSJ9.Uizm_qdfuqRzXoUBmILUKJ8X7wukgl_beRR00T_fXduAl7MJHu4OW_t8Z06f__Xid8UBXSSYe5rnsnMIhiIwS0ZfnfYOUGg6nHgWthteqihiQobznSGNJO8evvXhEyjPPZnFYqCFVtJxC_ULWWDN0q9l-3TvbA3li1k6frThoBkfJ3eqN1RyjvjaruYHYUfJd9kofXsmV0DRquFJZifhpB-zYwC2dErpt-ygQsw_-8YjgdbZVfqcS1yZelIzy6ejHkMZ4ubwiM7NCkOZ3nx1qtIP14FrwyWirmI8LqqkI8hwCxgx6j4URM8hVVa2AsxP6I5PqnhvsmMjUtu2D03Akw';
+        const authToken = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE3MDAyNTcwMDEsImV4cCI6MTcwMDI2MDYwMSwicm9sZXMiOlsiUk9MRV9BRE1JTiIsIlJPTEVfVVNFUiJdLCJ1c2VybmFtZSI6InN0ZXZlbi5ndWlsbGVybWV0QGVwaXRlY2guZGlnaXRhbCJ9.CccpmkzR-48c-zmAisFDOVjmdm6l28WDAuS6nlpE3vQb-nGohNv6LI9-jd9tYLB5P_DKwAqN6TQIgsSVd10x6CqbfDuRzJc7kUWFrBWD_V9p3U8lxfDUyvelTxOivvOGaXqewbDXQvaistqsLQaQKs8AQ0dKyZUlpHgGCICWLvkAICN1tNJTCB_MKYcTxZDIwPn5IW369KIlsuaj7Ab05vCPlexkptgi_SZ7-x-opkdUqQu7Ch0w1a4KFZK7ZjiR-GvB56g1vxQIyH1pQu0Sx36eEsXWr3_39cRO_rq3o8lPT3ykdBM79S30u0e0GiNdsWyR2Ls9WEx6JZvfbQbeIA';
  
         const response = await fetch(`http://localhost/api/categories/${this.categorieEnEdition.id}`, {
           method: 'PUT',
