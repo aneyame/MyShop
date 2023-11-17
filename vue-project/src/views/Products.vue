@@ -1,13 +1,7 @@
 <template> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  <div class="w-[1512px] h-[982px] pl-24 pr-[140px] pt-[106px] bg-neutral-900 justify-start items-center inline-flex">
-    <div class="self-stretch flex-col justify-start items-start gap-2.5 inline-flex">
-=======
     <div class="w-[1512px] h-[982px] pl-24 pr-[140px] pt-[106px] bg-neutral-900 justify-start items-center inline-flex">
     <div class="w-[1276px] self-stretch flex-col justify-start items-start gap-2.5 inline-flex">
->>>>>>> Stashed changes
         <div class="w-[1276px] h-[885px] relative">
             <div class="w-[464px] h-[549px] px-5 py-[25px] left-[812px] top-0 absolute bg-neutral-900 rounded-[10px] border border-neutral-400 flex-col justify-start items-start gap-[22px] inline-flex">
                 <div class="h-[100px] flex-col justify-start items-start gap-3 flex">
@@ -42,11 +36,6 @@
         </div>
     </div>
 </div>
-=======
-    <section>
-        <h1>Products Page Wsp !</h1>
-    </section>
->>>>>>> Stashed changes
 </template>
 
 <script>
