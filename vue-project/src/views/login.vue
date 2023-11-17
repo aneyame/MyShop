@@ -1,6 +1,11 @@
 <template>
+<<<<<<< Updated upstream
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <div id="login" class="flex justify-center">
+=======
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <div id="login" class="flex justify-center pt-[100px]">
+>>>>>>> Stashed changes
     <div class="w-full max-w-sm">
       <div class="mx-auto text-center">
         <h1 class="text-3xl font-semibold">Sign In</h1>
@@ -103,8 +108,7 @@
   </script>
   
 <style>
-#app{
-  display: flex;
+#login{
   justify-content: center;
   align-items: center;
 }
